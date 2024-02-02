@@ -1,0 +1,145 @@
+html,body{
+  font-family: 'Nerko One', cursive;
+  color: white;
+  background-color: #272b30;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+
+nav {
+  background-color: rgb(58, 73, 123) !important;
+  margin-inline: auto;
+  margin-top: -30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+  color: white;
+}
+
+.nav-item .nav-link.active, .nav-item .nav-link:hover {
+  color: #09c !important;
+  transition: color 0.5s;
+}
+
+.custom-nav-light{
+  color: white !important;
+}
+
+h5{
+  color: white !important;
+}
+
+
+
+header img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+
+
+
+.like-btns{
+  background-color: #34383B;
+  border-radius: 5px;
+  padding-inline: 5px;
+  font-size: 14px;
+}
+
+.custom-card-body{
+  min-height: 18rem;
+  max-height: 18rem; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+ .card {
+  filter: grayscale(0.7);
+  transition: all 0.5s, filter 0.5s 0.1s;
+  cursor: pointer;
+}
+
+.card:hover {
+  filter: none;
+  scale: 1.05;
+}
+
+.card-text{
+    max-lines:3;
+}
+
+
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+  scale: 1.8;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.details {
+  background-color: #272729be;
+  backdrop-filter: blur(4px);
+  min-height: 100vh;
+}
+
+.hidden{
+  display: none;
+}
+
+
+.hiddenDetail{
+  display: none;
+}
+
+.overFlow{
+  overflow: hidden;
+}
